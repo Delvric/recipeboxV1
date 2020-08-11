@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>{{author.name}}</h1>
+
+    <p>{{author.bio}}</p>
+
+    <h2>Recipes</h2>
+    <ul>
+        {% for recipe in recipe %}
+        <li>
+            <a href="/post/{{recipe.id}}">{{recipe}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

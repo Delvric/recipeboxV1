@@ -1,0 +1,12 @@
+<div class="container">
+    {% if not post %}
+    <h1> The post you seek is null and void.</h1>
+    {% else %}
+        <h2>{{ post.title }}</h2>
+        <a href="/author/{{post.author.id}}">{{ post.author.name}}</a>
+        <p>{{ post.time_required }}</p>
+        <p>{{ post.description }}</p>
+        <p>{{ post.instructions }}</p>
+    {% endif %}
+
+</div>
